@@ -1,0 +1,6 @@
+{
+  "name": "RentEasy - Global Rental Marketplace",
+  "description": "Find. Rent. Connect. Premium international rental marketplace connecting tenants and property owners 100% free with zero commission.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

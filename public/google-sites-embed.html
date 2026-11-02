@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentEasy – Global Rental Marketplace | Google Sites Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F8FAFC;
+      color: #0F172A;
+      line-height: 1.5;
+      padding: 24px 16px;
+    }
+    .portal-card {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 28px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+      overflow: hidden;
+    }
+    .hero-banner {
+      background: linear-gradient(135deg, #0F172A 0%, #064E3B 50%, #167B62 100%);
+      padding: 48px 36px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 12px;
+      font-weight: 700;
+      color: #A7F3D0;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .hero-subtitle {
+      font-size: 16px;
+      color: #E2E8F0;
+      max-width: 620px;
+      margin: 0 auto 28px auto;
+      font-weight: 400;
+    }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: #167B62;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(22, 123, 98, 0.4);
+    }
+    .btn-primary:hover {
+      background: #126550;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.95);
+      color: #0F172A;
+    }
+    .btn-secondary:hover {
+      background: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 36px;
+      background: #FFFFFF;
+    }
+    .feature-item {
+      padding: 20px;
+      border-radius: 18px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+    }
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: #ECFDF5;
+      color: #167B62;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .feature-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 6px;
+    }
+    .feature-desc {
+      font-size: 13px;
+      color: #64748B;
+      line-height: 1.5;
+    }
+    .footer-bar {
+      padding: 18px 36px;
+      background: #F1F5F9;
+      border-top: 1px solid #E2E8F0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #64748B;
+      gap: 12px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+    .footer-links a {
+      color: #167B62;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .hero-banner {
+        padding: 36px 20px;
+      }
+      .hero-title {
+        font-size: 26px;
+      }
+      .btn {
+        width: 100%;
+      }
+      .features-grid {
+        padding: 24px 20px;
+      }
+      .footer-bar {
+        padding: 18px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portal-card">
+    <div class="hero-banner">
+      <div class="badge">
+        <span>✓ 100% Free · Zero Commission · Direct Owner Contact</span>
+      </div>
+      <h1 class="hero-title">Find a place you'll love.</h1>
+      <p class="hero-subtitle">
+        Discover rooms, apartments, and homes for rent worldwide. Connect directly with verified property owners without middlemen or listing charges.
+      </p>
+
+      <div class="btn-group">
+        <a id="explore-link" href="#" target="_top" class="btn btn-primary">
+          Explore Properties
+        </a>
+        <a id="list-link" href="#" target="_top" class="btn btn-secondary">
+          List Your Property – Free
+        </a>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🏠</div>
+        <h3 class="feature-title">15 Property Categories</h3>
+        <p class="feature-desc">Single rooms, shared flats, studio apartments, 1-4 BHK, villas, commercial units, and hostels.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">🛡️</div>
+        <h3 class="feature-title">Direct Landlord Contact</h3>
+        <p class="feature-desc">Call, WhatsApp, or chat with verified property owners with complete transparency and zero commission.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">No Mandatory Account</h3>
+        <p class="feature-desc">Browse freely and list properties instantly without forced passwords or phone OTP verification.</p>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div>© RentEasy Marketplace · Find. Rent. Connect.</div>
+      <div class="footer-links">
+        <a id="about-link" href="#" target="_top">About Us</a>
+        <a id="terms-link" href="#" target="_top">Terms & Privacy</a>
+        <a id="contact-link" href="#" target="_top">Contact Support</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Automatically dynamic URL resolution
+    const appOrigin = window.location.origin;
+    document.getElementById('explore-link').href = appOrigin + '/#explore';
+    document.getElementById('list-link').href = appOrigin + '/#post';
+    document.getElementById('about-link').href = appOrigin + '/#about';
+    document.getElementById('terms-link').href = appOrigin + '/#terms';
+    document.getElementById('contact-link').href = appOrigin + '/#contact';
+  </script>
+
+</body>
+</html>
